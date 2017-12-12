@@ -8,22 +8,24 @@
     tools:context="com.example.navadroid.androidonactivityresult.AnotherActivity"
     android:orientation="vertical">
 
-    <RadioGroup
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-        <RadioButton
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apple"
-            android:id="@+id/rb_apple" />
+            android:textSize="30sp" />
 
-        <RadioButton
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvSurname"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pen"
-            android:id="@+id/rb_pen"/>
-
-    </RadioGroup>
+            android:textSize="30sp" />
+    </LinearLayout>
 
 </LinearLayout>
